@@ -3,11 +3,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@android:drawable/edit_text" >
         <TextView
             android:id="@+id/nfc_info"
             android:layout_width="fill_parent"
@@ -15,6 +10,6 @@
             android:scrollbars="vertical"
             android:maxLines="1"
             android:text="@string/info"
-            android:gravity="center"/>
-    </ScrollView>
+            android:gravity="center"
+            android:textSize="50dp"/>
 </LinearLayout>

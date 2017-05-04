@@ -2,12 +2,10 @@ package com.example.mynfcdemo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.app.Activity;
 import android.content.Intent;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.nfc.tech.MifareClassic;
-import android.os.Bundle;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         /** 由于大部分Android设备只支持一个NFC Adapter，所以一般直接调用getDefaultAapater来获取手机中的Adapter */
         nfcAdapter = NfcAdapter.getDefaultAdapter(this);
         if (nfcAdapter == null) {
-            info.setText("设备不支持NFC！");
+            info.setText("此设备不支持NFC！");
             return;
         }
         /** NFC功能未启用 */
